@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding-top: 50px;
   background-color: slategray;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .page-content {

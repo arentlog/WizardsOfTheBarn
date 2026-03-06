@@ -1,0 +1,28 @@
+<h2>Game Entry</h2>
+
+<div class="player-form">
+	<div class="date-entry">
+		<label>Date</label>
+		<input type="date" [(ngModel)]="newGame.playDate">
+  </div>
+
+	<div *ngFor="let player of newGame.gamePlayers; let i = index">
+		<div class="player-entry">
+			<label (click)="selectWinner(i)" [class.selected]="selectedWinner == i">Player {{i + 1}} <span *ngIf="selectedWinner == i">&#9733;</span></label>
+			<input type="text" [(ngModel)]="player.name">
+			<label>Commander</label>
+			<input type="text" [(ngModel)]="player.commander">
+		</div>
+	</div>
+
+	<br>
+
+	<div class="save-button">
+		<button (click)="saveGame()">Save Game</button>
+	</div>
+</div>
+
+<div *ngIf="games.length > 0" class="saved-games">
+  <h3>Game Saved Successfully</h3>
+  <pre>{{ games | json }}</pre>
+</div>
