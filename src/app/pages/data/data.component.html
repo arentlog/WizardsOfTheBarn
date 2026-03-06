@@ -8,7 +8,7 @@
 
 	<div *ngFor="let player of newGame.gamePlayers; let i = index">
 		<div class="player-entry">
-			<label (click)="selectWinner(i)" [class.selected]="selectedWinner == i">Player {{i + 1}} <span *ngIf="selectedWinner == i">&#9733;</span></label>
+			<label (click)="selectWinner(i)" class="winner-select" [class.selected]="selectedWinner == i">Player {{i + 1}} <span *ngIf="selectedWinner == i">&#9733;</span></label>
 			<input type="text" [(ngModel)]="player.name">
 			<label>Commander</label>
 			<input type="text" [(ngModel)]="player.commander">

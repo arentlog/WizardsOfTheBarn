@@ -19,7 +19,7 @@ h2 {
   gap: 10px;
 }
 
-.player-entry label {
+.winner-select {
   min-width: 80px;
   cursor: pointer;
   padding: 5px;
@@ -31,7 +31,7 @@ h2 {
   background-color: #fffb00;
 }
 
-.player-entry label:hover {
+.winner-select:hover {
   background-color: #f0f0f0;
 }
 
