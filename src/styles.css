@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  padding-top: 50px;
+  background-color: slategray;
+}
+
+.page-content {
+	padding: 10px;
+}
